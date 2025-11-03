@@ -13,9 +13,9 @@
  */
 
 import { useEffect, useState } from "react";
-import { createClient, sendTransaction, waitForBatchConfirmation } from "../src/utils/paymentService";
-import { connectWallet, disconnectWallet, switchToBaseSepolia } from "../src/utils/walletServices";
-import { checkPaymasterService } from "../src/utils/walletProvider";
+import { createClient, sendTransaction, waitForBatchConfirmation } from "../utils/paymentService";
+import { connectWallet, disconnectWallet, switchToBaseSepolia } from "../utils/walletServices";
+import { checkPaymasterService } from "../utils/walletProvider";
 
 const ClaimReward = () => {
     // Wallet state management

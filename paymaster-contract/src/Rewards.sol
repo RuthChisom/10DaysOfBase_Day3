@@ -9,7 +9,8 @@ contract RewardContract{
     }
 
     function claimReward() external {
-        require(rewardClaimed ==false, "Reward already claimed");
+        require(rewardClaimed == false, "Reward already claimed!");
+
         uint256 rewardAmount = address(this).balance;
         payable(msg.sender).transfer(rewardAmount);
         rewardClaimed = true;
